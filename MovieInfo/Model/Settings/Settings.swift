@@ -24,7 +24,7 @@ class Settings {
     }
     
     func getAPIKey() -> String? {
-        if let apiKey = readPlist(key: "apiKey", bundle: "Configuration") as? String {
+        if let apiKey = readPlist(key: Keys.apiKey, bundle: "Configuration") as? String {
             return apiKey
         }
         return nil

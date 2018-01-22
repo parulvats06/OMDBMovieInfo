@@ -6,16 +6,20 @@
 //  Copyright © 2018 parul vats. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class UIButton_Layout: UIButton {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+extension UIButton {
+    
+    func addShadow() {
+        layer.shadowColor = UIColor.white.cgColor
+        layer.shadowRadius = 1.0
+        layer.shadowOpacity = 0.5
     }
-    */
-
+    
+    func makeButtonRound(cornerRadius: CGFloat, borderWidth: CGFloat, borderColor: UIColor) {
+        layer.cornerRadius = cornerRadius
+        layer.borderWidth = borderWidth
+        layer.borderColor = borderColor.cgColor
+    }
 }

@@ -8,6 +8,6 @@
 
 import UIKit
 
-class Keys: s {
-
+struct Keys {
+    static let apiKey: String = "omdbapiAPIKey"
 }

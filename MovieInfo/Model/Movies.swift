@@ -7,7 +7,32 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class Movies: NSObject {
+struct Movie {
+    var title: String
+    var year: Int
+    var imdbID: String
+    var type: String
+    var poster: String
+    
+    init(json: JSON) {
+        title = json["Title"].stringValue
+        year = json["Year"].intValue
+        imdbID = json["imdbID"].stringValue
+        type = json["Type"].stringValue
+        poster = json["Poster"].stringValue
+    }
+}
 
+struct Movies {
+    var movies: [Movie]
+    
+    init(json: JSON) {
+        movies = [Movie]()
+        for (_, subJSON) in json {
+            let movie = Movie(json: subJSON)
+            movies.append(movie)
+        }
+    }
 }
