@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="101.59999999999999" y="230.73463268365819"/>
         </scene>
-        <!--View Controller-->
+        <!--Movies Detail View Controller-->
         <scene sceneID="1eh-AC-uPv">
             <objects>
-                <viewController id="tx8-zL-UFe" sceneMemberID="viewController">
+                <viewController id="tx8-zL-UFe" customClass="MoviesDetailViewController" customModule="MovieInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nfa-BA-tP5"/>
                         <viewControllerLayoutGuide type="bottom" id="SoM-rG-cfU"/>
