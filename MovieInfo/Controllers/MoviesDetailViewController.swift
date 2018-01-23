@@ -14,7 +14,7 @@ class MoviesDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Details"
         // Do any additional setup after loading the view.
     }
 

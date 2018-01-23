@@ -14,7 +14,6 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -24,7 +23,13 @@ class SearchViewController: UIViewController {
     }
        
     @IBAction func touchUpInsideSearchButtonPressed(_ sender: Any) {
-        
+        self.presentSearchResults()
+    }
+    
+    fileprivate func presentSearchResults() {
+        if let moviesVC = self.storyboard?.instantiateViewController(withIdentifier: "MoviesVC") as? MoviesViewController {
+            self.navigationController?.pushViewController(moviesVC, animated: true)
+        }
     }
     
 }
