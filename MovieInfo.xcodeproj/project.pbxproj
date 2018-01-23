@@ -34,6 +34,10 @@
 		50423FF72017BA5500C41E10 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50423FF62017BA5500C41E10 /* UIViewController+Alert.swift */; };
 		50423FF92017BC6500C41E10 /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50423FF82017BC6500C41E10 /* UIImageView+Cache.swift */; };
 		50423FFC2017BC8800C41E10 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50423FFB2017BC8700C41E10 /* ImageCache.swift */; };
+		504240042017C3B000C41E10 /* MovieDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504240022017C3B000C41E10 /* MovieDataTableViewCell.swift */; };
+		504240052017C3B000C41E10 /* MovieDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504240032017C3B000C41E10 /* MovieDataTableViewCell.xib */; };
+		504240082017C3C500C41E10 /* MoviePosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504240062017C3C500C41E10 /* MoviePosterTableViewCell.swift */; };
+		504240092017C3C500C41E10 /* MoviePosterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504240072017C3C500C41E10 /* MoviePosterTableViewCell.xib */; };
 		BCB6698211310D5491DB66A3 /* Pods_MovieInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4722A9AEC5E4D7E797E9BA2 /* Pods_MovieInfo.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +93,10 @@
 		50423FF62017BA5500C41E10 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		50423FF82017BC6500C41E10 /* UIImageView+Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
 		50423FFB2017BC8700C41E10 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Utilities/ImageCache.swift; sourceTree = "<group>"; };
+		504240022017C3B000C41E10 /* MovieDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataTableViewCell.swift; sourceTree = "<group>"; };
+		504240032017C3B000C41E10 /* MovieDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDataTableViewCell.xib; sourceTree = "<group>"; };
+		504240062017C3C500C41E10 /* MoviePosterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterTableViewCell.swift; sourceTree = "<group>"; };
+		504240072017C3C500C41E10 /* MoviePosterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviePosterTableViewCell.xib; sourceTree = "<group>"; };
 		F4722A9AEC5E4D7E797E9BA2 /* Pods_MovieInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -246,6 +254,7 @@
 		50423FE0201656DC00C41E10 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				50423FFD2017C22800C41E10 /* MovieDetailView */,
 				50423FE12016570200C41E10 /* MoviesView */,
 			);
 			path = View;
@@ -285,6 +294,17 @@
 				50423FFB2017BC8700C41E10 /* ImageCache.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		50423FFD2017C22800C41E10 /* MovieDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				504240022017C3B000C41E10 /* MovieDataTableViewCell.swift */,
+				504240032017C3B000C41E10 /* MovieDataTableViewCell.xib */,
+				504240062017C3C500C41E10 /* MoviePosterTableViewCell.swift */,
+				504240072017C3C500C41E10 /* MoviePosterTableViewCell.xib */,
+			);
+			path = MovieDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,10 +418,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504240052017C3B000C41E10 /* MovieDataTableViewCell.xib in Resources */,
 				50423FC3201613AC00C41E10 /* Info.plist in Resources */,
 				50423FE52016573D00C41E10 /* MovieTableViewCell.xib in Resources */,
 				50423F9B2016121E00C41E10 /* LaunchScreen.storyboard in Resources */,
 				50423F982016121E00C41E10 /* Assets.xcassets in Resources */,
+				504240092017C3C500C41E10 /* MoviePosterTableViewCell.xib in Resources */,
 				50423FD72016327B00C41E10 /* Configuration.plist in Resources */,
 				50423FCA2016147800C41E10 /* Default-568h@2x.png in Resources */,
 				50423F962016121E00C41E10 /* Main.storyboard in Resources */,
@@ -491,6 +513,8 @@
 				50423FD120161CF300C41E10 /* Movies.swift in Sources */,
 				50423FF52017B03400C41E10 /* MovieDetailModel.swift in Sources */,
 				50423FE42016573D00C41E10 /* MovieTableViewCell.swift in Sources */,
+				504240042017C3B000C41E10 /* MovieDataTableViewCell.swift in Sources */,
+				504240082017C3C500C41E10 /* MoviePosterTableViewCell.swift in Sources */,
 				50423FCF20161CE200C41E10 /* MovieDetail.swift in Sources */,
 				50423FFC2017BC8800C41E10 /* ImageCache.swift in Sources */,
 				50423FDF20163E7E00C41E10 /* UIButton+Layout.swift in Sources */,

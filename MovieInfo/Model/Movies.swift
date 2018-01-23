@@ -9,6 +9,8 @@
 import UIKit
 import SwiftyJSON
 
+// Using the MVVM architecture , this class describes the view model for Movies
+// this is created to separate the responsiblity of manipulating the data in the view that needs to displayed
 struct Movie {
     var title: String
     var year: Int
@@ -30,9 +32,7 @@ struct Movies {
     
     init(json: JSON) {
         movies = [Movie]()
-        
         let dataJson = json["Search"].arrayValue
-        print (dataJson)
         for subJson in dataJson {
             let movie = Movie(json: subJson)
             movies.append(movie)

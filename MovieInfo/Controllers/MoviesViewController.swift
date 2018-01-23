@@ -17,7 +17,6 @@ class MoviesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Movies"
-        print(searchText)
         super.viewDidLoad()
         initializeTableView()
         loadMovies()
@@ -70,6 +69,11 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // check for internet connection
+        if !isConnectedToNetwork() {
+            showAlert(title: "Alert", message: "Check your internet connection")
+            return
+        }
         if let movieDetailVC = self.storyboard?.instantiateViewController(withIdentifier: Constants.storyboardId.movieDetailVC) as? MoviesDetailViewController {
             movieDetailVC.imdbId = moviesDataModel.getIMDBId(for: indexPath)
             movieDetailVC.movieTitle = moviesDataModel.movieTitle(for: indexPath)

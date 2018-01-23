@@ -11,10 +11,14 @@ import UIKit
 struct Constants {
     struct cellIdentifiers {
         static let moviesViewCellIdentifier = "MovieTableCellIdentifier"
+        static let moviePosterCellIdentifier = "MoviePosterCellIdentifier"
+        static let movieDataCellIdentifier = "MovieDataCellIdentifier"
     }
     
     struct nibIdentifiers {
         static let moviesTableViewCell = "MovieTableViewCell"
+        static let moviePosterTableViewCell = "MoviePosterTableViewCell"
+        static let movieDataTableViewCell = "MovieDataTableViewCell"
     }
     
     struct storyboardId {

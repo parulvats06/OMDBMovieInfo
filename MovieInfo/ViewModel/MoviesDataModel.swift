@@ -8,6 +8,8 @@
 
 import UIKit
 
+// Using the MVVM architecture , this class describes the view model for Movies
+// this is created to separate the responsiblity of manipulating the data in the view that needs to displayed
 class MoviesDataModel: NSObject {
     var data: Movies?
     
@@ -33,12 +35,12 @@ class MoviesDataModel: NSObject {
         return data?.movies[indexPath.row].title ?? ""
     }
     
-    /* returns the movie title */
+    /* returns the movie poster */
     func moviePoster(for indexPath: IndexPath) -> String {
         return data?.movies[indexPath.row].poster ?? ""
     }
     
-    /* returns the movie title */
+    /* returns the movie imdb id */
     func getIMDBId(for indexPath: IndexPath) -> String {
         return data?.movies[indexPath.row].imdbID ?? ""
     }

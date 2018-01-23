@@ -2,7 +2,7 @@
 //  ImageCache.swift
 //  MovieInfo
 //
-//  Created by Mohit Mishra on 1/23/18.
+//  Created by parul vats on 1/23/18.
 //  Copyright © 2018 parul vats. All rights reserved.
 //
 

@@ -18,7 +18,6 @@ class Service: APIProtocol {
         dataTask(urlRequest: "?s=" + searchText, method: "GET", parameters: nil, completion: { (success, data) in
             if success, let data = data as? Data{
                 let json = JSON(data: data)
-                print(json)
                 onSuccess?(Movies(json: json))
             } else if let data = data as? NSError {
                 onError?(data)
@@ -56,7 +55,6 @@ class Service: APIProtocol {
             let httpBody = try? JSONSerialization.data(withJSONObject: parameters ?? "", options: [])
             request.httpBody = httpBody
         }
-        print(request)
         let session = URLSession(configuration: URLSessionConfiguration.default)
         
         session.dataTask(with: request) { (data, response, error) -> Void in

@@ -46,6 +46,11 @@ class SearchViewController: UIViewController {
     }
     
     fileprivate func presentSearchResults() {
+        // check for internet connection
+        if !isConnectedToNetwork() {
+            showAlert(title: "Alert", message: "Check your internet connection")
+            return
+        }
         if let moviesVC = self.storyboard?.instantiateViewController(withIdentifier: Constants.storyboardId.moviesVC) as? MoviesViewController {
             guard let textToSearch = searchText?.text else {
                 // throw error if invalid text or empty
@@ -55,7 +60,6 @@ class SearchViewController: UIViewController {
             self.navigationController?.pushViewController(moviesVC, animated: true)
         }
     }
-    
 }
 
 extension SearchViewController: UITextFieldDelegate {

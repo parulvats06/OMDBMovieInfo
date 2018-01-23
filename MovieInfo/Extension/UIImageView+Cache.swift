@@ -2,7 +2,7 @@
 //  UIImageView+Cache.swift
 //  MovieInfo
 //
-//  Created by Mohit Mishra on 1/23/18.
+//  Created by parul vats on 1/23/18.
 //  Copyright © 2018 parul vats. All rights reserved.
 //
 
@@ -49,11 +49,9 @@ extension UIImageView {
                 if (error as NSError).domain == NSURLErrorDomain && (error as NSError).code == NSURLErrorCancelled {
                     return
                 }
-                print(error)
                 return
             }
             guard let data = data, let downloadedImage = UIImage(data: data) else {
-                print("unable to extract image")
                 return
             }
             ImageCache.shared.save(image: downloadedImage, forKey: urlString)
