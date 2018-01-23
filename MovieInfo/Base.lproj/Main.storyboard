@@ -127,31 +127,10 @@
                     <view key="view" contentMode="scaleToFill" id="s2j-hS-Mye">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exS-lX-6nY">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="igN-yU-Iar"/>
-                                </items>
-                            </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e2d-dR-bm6">
-                                <rect key="frame" x="0.0" y="44" width="375" height="133.5"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="exS-lX-6nY" firstAttribute="leading" secondItem="s2j-hS-Mye" secondAttribute="leading" id="Bmb-9L-j7G"/>
-                            <constraint firstAttribute="trailing" secondItem="exS-lX-6nY" secondAttribute="trailing" id="SU5-cL-a8L"/>
-                            <constraint firstItem="e2d-dR-bm6" firstAttribute="top" secondItem="exS-lX-6nY" secondAttribute="bottom" id="e4R-Ps-5nV"/>
-                            <constraint firstItem="exS-lX-6nY" firstAttribute="top" secondItem="s2j-hS-Mye" secondAttribute="top" id="ip7-u9-urx"/>
-                            <constraint firstItem="e2d-dR-bm6" firstAttribute="leading" secondItem="s2j-hS-Mye" secondAttribute="leading" id="key-88-Fa6"/>
-                            <constraint firstItem="e2d-dR-bm6" firstAttribute="width" secondItem="s2j-hS-Mye" secondAttribute="width" id="s48-hH-HwC"/>
-                            <constraint firstItem="e2d-dR-bm6" firstAttribute="height" secondItem="s2j-hS-Mye" secondAttribute="height" multiplier="0.2" id="xyV-AG-12G"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="movieDetailModel" destination="fJs-bS-JRk" id="nKF-yG-fvt"/>
-                        <outlet property="moviePosterImageView" destination="e2d-dR-bm6" id="Jh3-Zw-eoK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q13-f2-81q" userLabel="First Responder" sceneMemberID="firstResponder"/>

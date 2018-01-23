@@ -19,7 +19,7 @@ class MoviesDataModel: NSObject {
                 completion()
             }
         }) { (error) in
-            // handle error later
+            NSLog("Recieved error: \(error) while getting movies")
         }
     }
     

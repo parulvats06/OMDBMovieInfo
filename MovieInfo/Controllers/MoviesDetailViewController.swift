@@ -9,8 +9,6 @@
 import UIKit
 
 class MoviesDetailViewController: UIViewController {
-
-    @IBOutlet weak var moviePosterImageView: UIImageView!
     @IBOutlet var movieDetailModel: MovieDetailModel!
     
     var imdbId: String = ""
@@ -42,7 +40,7 @@ class MoviesDetailViewController: UIViewController {
                 guard let data = data, error == nil else { return }
                 print("Download Finished")
                 DispatchQueue.main.async() {
-                    self.moviePosterImageView.image = UIImage(data: data)
+                   // self.moviePosterImageView.image = UIImage(data: data)
                 }
             }
         }

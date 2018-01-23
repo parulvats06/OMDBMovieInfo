@@ -20,6 +20,7 @@ class SearchViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // Do any additional setup after loading the view.
+        searchText.delegate = self
         //reset the text
         setupSearchButtonView()
         searchText?.text = ""
@@ -29,8 +30,12 @@ class SearchViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-       
+    
     @IBAction func touchUpInsideSearchButtonPressed(_ sender: Any) {
+        if let isEmpty = searchText.text?.isEmpty, isEmpty {
+            self.showAlert(title: "Error", message: "Search field is empty")
+            return
+        }
         self.presentSearchResults()
     }
     
@@ -51,4 +56,11 @@ class SearchViewController: UIViewController {
         }
     }
     
+}
+
+extension SearchViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
 }

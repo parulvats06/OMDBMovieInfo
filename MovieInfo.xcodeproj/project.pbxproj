@@ -32,6 +32,7 @@
 		50423FF1201786B800C41E10 /* MoviesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50423FF0201786B800C41E10 /* MoviesDataModel.swift */; };
 		50423FF32017A6AA00C41E10 /* NSURL+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50423FF22017A6AA00C41E10 /* NSURL+Fetch.swift */; };
 		50423FF52017B03400C41E10 /* MovieDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50423FF42017B03400C41E10 /* MovieDetailModel.swift */; };
+		50423FF72017BA5500C41E10 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50423FF62017BA5500C41E10 /* UIViewController+Alert.swift */; };
 		BCB6698211310D5491DB66A3 /* Pods_MovieInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4722A9AEC5E4D7E797E9BA2 /* Pods_MovieInfo.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		50423FF0201786B800C41E10 /* MoviesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDataModel.swift; sourceTree = "<group>"; };
 		50423FF22017A6AA00C41E10 /* NSURL+Fetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSURL+Fetch.swift"; sourceTree = "<group>"; };
 		50423FF42017B03400C41E10 /* MovieDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailModel.swift; sourceTree = "<group>"; };
+		50423FF62017BA5500C41E10 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		F4722A9AEC5E4D7E797E9BA2 /* Pods_MovieInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -233,6 +235,7 @@
 			children = (
 				50423FDE20163E7E00C41E10 /* UIButton+Layout.swift */,
 				50423FF22017A6AA00C41E10 /* NSURL+Fetch.swift */,
+				50423FF62017BA5500C41E10 /* UIViewController+Alert.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				50423FEA20165B6D00C41E10 /* MoviesViewController.swift in Sources */,
 				50423FE820165B4700C41E10 /* SearchViewController.swift in Sources */,
 				50423FF1201786B800C41E10 /* MoviesDataModel.swift in Sources */,
+				50423FF72017BA5500C41E10 /* UIViewController+Alert.swift in Sources */,
 				50423FD320162FB800C41E10 /* Settings.swift in Sources */,
 				50423FD120161CF300C41E10 /* Movies.swift in Sources */,
 				50423FF52017B03400C41E10 /* MovieDetailModel.swift in Sources */,
