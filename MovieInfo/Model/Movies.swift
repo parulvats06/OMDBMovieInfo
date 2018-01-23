@@ -30,8 +30,11 @@ struct Movies {
     
     init(json: JSON) {
         movies = [Movie]()
-        for (_, subJSON) in json {
-            let movie = Movie(json: subJSON)
+        
+        let dataJson = json["Search"].arrayValue
+        print (dataJson)
+        for subJson in dataJson {
+            let movie = Movie(json: subJson)
             movies.append(movie)
         }
     }

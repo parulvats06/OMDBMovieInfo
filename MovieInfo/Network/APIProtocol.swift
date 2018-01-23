@@ -9,6 +9,7 @@
 // This class defines the protocal for API service
 
 import Foundation
+import UIKit
 
 let baseURL: String = "https://www.omdbapi.com/"
 
