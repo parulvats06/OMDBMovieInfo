@@ -64,18 +64,8 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
         if let cell = cell as? MovieTableViewCell {
             cell.movieTitle.text = moviesDataModel.movieTitle(for: indexPath)
             // Image loading.
-            if let url = URL(string: moviesDataModel.moviePoster(for: indexPath)) {
-                cell.posterImageView.contentMode = .scaleAspectFit
-                Service.sharedInstance.getDataFromUrl(url: url) { data, response, error in
-                    guard let data = data, error == nil else { return }
-                    print("Download Finished")
-                    DispatchQueue.main.async() {
-                        cell.posterImageView.image = UIImage(data: data)
-                    }
-                }
-            }
+            cell.posterImageView.loadImageAsync(with: moviesDataModel.moviePoster(for: indexPath))
         }
-        
         return cell
     }
     

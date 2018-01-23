@@ -35,15 +35,6 @@ class MoviesDetailViewController: UIViewController {
     
     fileprivate func loadPoster() {
         // Image loading.
-        if let url = URL(string: (movieDetailModel.data?.poster)!) {
-            Service.sharedInstance.getDataFromUrl(url: url) { data, response, error in
-                guard let data = data, error == nil else { return }
-                print("Download Finished")
-                DispatchQueue.main.async() {
-                   // self.moviePosterImageView.image = UIImage(data: data)
-                }
-            }
-        }
     }
 
 }
