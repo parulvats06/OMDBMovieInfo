@@ -9,8 +9,6 @@
 import UIKit
 import SwiftyJSON
 
-// Using the MVVM architecture , this class describes the view model for Movies
-// this is created to separate the responsiblity of manipulating the data in the view that needs to displayed
 struct Movie {
     var title: String
     var year: Int
